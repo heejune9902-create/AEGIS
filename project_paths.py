@@ -10,7 +10,6 @@ OUTPUT_DIR = Path(os.environ.get("AEGIS_OUTPUT_ROOT", PROJECT_ROOT / "outputs"))
 
 PATIENT_MAPPING_PATH = PROCESSED_DIR / "AEGIS-PT" / "pt_noise_date_time.csv"
 
-
 def deidentified_path(source_path):
     """원본 테이블의 하위 폴더를 유지해 처리본 경로를 만든다."""
     relative = Path(source_path).resolve().relative_to(DATA_ROOT)
